@@ -1,0 +1,80 @@
+:root {
+  --main: #e63946;
+  --dark: #000000af;
+  --bg: #fff8f0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--bg);
+}
+
+.navbar {
+  background: var(--dark) !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url('https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1200') center/cover;
+  padding: 100px 0;
+  color: white;
+}
+
+.food-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+  transition: 0.3s;
+  height: 100%;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+}
+
+.food-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.price {
+  color: var(--main);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btn-main {
+  background: var(--main);
+  color: white;
+  border-radius: 50px;
+  padding: 8px 20px;
+  border: none;
+}
+
+.btn-main:hover {
+  background: #c62f3b;
+  color: white;
+}
+
+.section-title {
+  color: var(--dark);
+  font-weight: 800;
+  border-right: 5px solid var(--main);
+  padding-right: 15px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.cart-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
